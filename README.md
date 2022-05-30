@@ -53,7 +53,7 @@ Para mayor detalle, el diccionario de cada variable lo pueden encontrar en el pa
 
 # Estrategia de gestión
 Según estos antecedentes se recomienda realizar un seguimiento a aquellos pacientes que se encuentran en el último y penúltimo tramo de mayor probabilidad, pudiendo definirse la estrategia de seguimiento, según la afección y tratamiento recomendado a cada paciente.
-Además, se recomienda en un futuro incorporar la fecha de cada registro para poder crear variables históricas, que es bien sabido, incorporar una gran capacidad predictiva sobre los modelos.
+Además, se recomienda en un futuro agregar la fecha de cada registro para poder crear variables históricas, que es bien sabido, incorporan una gran capacidad predictiva sobre los modelos.
 
 
 # SIGUIENTES ETAPAS
