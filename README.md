@@ -37,21 +37,23 @@ A continuación, se muestra la tabla de eficiencia y el número de registros que
 [![Tabla-de-desempe-o-en-test.png](https://i.postimg.cc/FKgPMHw0/Tabla-de-desempe-o-en-test.png)](https://postimg.cc/4Kybtsf3)
 
 # Relevancia de las variables y relación con la tasa de readmisión hospitalaria
-Ya conociendo el desempeño del modelo, podría ser interesante determinar las variables que contribuyen en mayor medida en la capacidad predictiva del modelo y la forma en que dichas variables se relacionan con la variable respuesta. A continuación, se muestra aquellas variables que contribuyen en mayor medida en la capacidad predictiva del modelo. Entre las más importantes se encuentran: “number_inpatient”, “discharge_disposition_id”, “number_diagnoses”.
+Ya conociendo el desempeño del modelo, podría ser interesante determinar las variables que contribuyen en mayor medida en la capacidad predictiva del modelo y la forma en que dichas variables se relacionan con la variable respuesta. A continuación, se muestra aquellas variables que contribuyen en mayor medida (ordenadas de mayor a menor)  en la capacidad predictiva del modelo. Entre las más importantes se encuentran: “number_inpatient”, “discharge_disposition_id”, “number_diagnoses”.
 
 [![Gini-porcentual.png](https://i.postimg.cc/CKkQNNFM/Gini-porcentual.png)](https://postimg.cc/DWf6f1JR)
 
-De los resultados observa que a medida que aumenta el número de hospitalizaciones el año anterior, es mayor la probabilidad de que el paciente en los próximos 30 días.
+En relación a la variable “number_inpatient” observa que a medida que aumenta el número de hospitalizaciones el año anterior, es mayor la probabilidad de que el paciente sea readmitido en los próximos 30 días.
 
 [![Hospitalizaciones-a-o-anterior.png](https://i.postimg.cc/QNwyWCGJ/Hospitalizaciones-a-o-anterior.png)](https://postimg.cc/YjN35pSv)
 
-De los resultados se observa que entre mayor sea el número de diagnósticos que tenga un paciente en el historial del hospital, mayor es la probabilidad de que sea readmitido en los próximos 30 días.
+En relación a la variable "number_diagnoses" se observa que entre mayor sea el número de diagnósticos que tenga un paciente en el historial del hospital, mayor es la probabilidad de que sea readmitido en los próximos 30 días.
 
 [![Numero-diagnositocos.png](https://i.postimg.cc/wT9s2cpq/Numero-diagnositocos.png)](https://postimg.cc/8sn5Pvc9)
 
+Para mayor detalle, el diccionario de cada variable lo pueden encontrar en el paper que está adjunto a la base de datos en la página de kaggle.
+
 # Estrategia de gestión
 Según estos antecedentes se recomienda realizar un seguimiento a aquellos pacientes que se encuentran en el último y penúltimo tramo de mayor probabilidad, pudiendo definirse la estrategia de seguimiento, según la afección y tratamiento recomendado a cada paciente.
-Además, se recomienda en un futuro incorporar variables históricas, que es bien sabido, incorporar una gran capacidad predictiva sobre los modelos.
+Además, se recomienda en un futuro incorporar la fecha de cada registro para poder crear variables históricas, que es bien sabido, incorporar una gran capacidad predictiva sobre los modelos.
 
 
 # SIGUIENTES ETAPAS
